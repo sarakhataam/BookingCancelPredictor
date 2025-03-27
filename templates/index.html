@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Prediction</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #74ebd5, #acb6e5);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden; 
+    }
+
+    .container {
+        background: white;
+        padding: 20px;
+        max-width: 450px;
+        width: 90%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        text-align: center;
+        max-height: 90vh;
+        overflow-y: auto; 
+    }
+
+    h2 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    label {
+        display: block;
+        text-align: left;
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    button {
+        background: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        margin-top: 15px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #45a049;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        margin-top: 15px;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Booking Prediction Form</h2>
+        <form action="/predict" method="post">
+            <label>Number of Adults:</label>
+            <input type="number" name="number of adults" required>
+
+            <label>Number of Children:</label>
+            <input type="number" name="number of children" required>
+
+            <label>Number of Weekend Nights:</label>
+            <input type="number" name="number of weekend nights" required>
+
+            <label>Number of Week Nights:</label>
+            <input type="number" name="number of week nights" required>
+
+            <label>Type of Meal:</label>
+            <select name="type of meal" required>
+                <option value="Meal Plan 1">Meal Plan 1</option>
+                <option value="Meal Plan 2">Meal Plan 2</option>
+                <option value="Meal Plan 3">Meal Plan 3</option>
+                <option value="Not Selected">Not Selected</option>
+            </select>
+
+            <label>Car Parking Space:</label>
+            <input type="number" name="car parking space" required>
+
+            <label>Room Type:</label>
+            <select name="room type" required>
+                <option value="Room_Type 1">Room Type 1</option>
+                <option value="Room_Type 2">Room Type 2</option>
+                <option value="Room_Type 3">Room Type 3</option>
+                <option value="Room_Type 4">Room Type 4</option>
+                <option value="Room_Type 5">Room Type 5</option>
+                <option value="Room_Type 6">Room Type 6</option>
+                <option value="Room_Type 7">Room Type 7</option>
+            </select>
+
+            <label>Lead Time:</label>
+            <input type="number" name="lead time" required>
+
+            <label>Market Segment Type:</label>
+            <select name="market segment type" required>
+                <option value="Online">Online</option>
+                <option value="Offline">Offline</option>
+                <option value="Corporate">Corporate</option>
+                <option value="Aviation">Aviation</option>
+                <option value="Complementary">Complementary</option>
+            </select>
+
+            <label>Repeated:</label>
+            <input type="number" name="repeated" required>
+
+            <label>P-C:</label>
+            <input type="number" name="P-C" required>
+
+            <label>P-not-C:</label>
+            <input type="number" name="P-not-C" required>
+
+            <label>Average Price:</label>
+            <input type="number" step="0.01" name="average price" required>
+
+            <label>Special Requests:</label>
+            <input type="number" name="special requests" required>
+
+            <label>Date of Reservation:</label>
+            <input type="date" name="date of reservation" required>
+
+            <button type="submit">Predict</button>
+            <p>{{ prediction_text }}</p>
+        </form>
+    </div>
+
+</body>
+</html>
