@@ -62,7 +62,7 @@ It integrates a **machine learning model (Random Forest Classifier)** with a **F
 ---
 
 ## 📁 Project Structure
-
+[Image](https://github.com/user-attachments/assets/835f1e3c-c880-4021-868c-b11afd985878)
 
 ---
 
