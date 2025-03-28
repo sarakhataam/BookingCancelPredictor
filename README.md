@@ -14,13 +14,13 @@ It integrates a **machine learning model (Random Forest Classifier)** with a **F
 - [🧼 Data Preprocessing](#-data-preprocessing)
 - [📈 Model Training](#-model-training)
 - [🌐 Web App with Flask](#-web-app-with-flask)
-- [🚀 How to Run the Project](#-how-to-run-the-project)
+
 
 ---
 
 ## 🎥 Demo
 
-[Click to Watch Demo](https://github.com/sarakhataam/BookingCancelPredictor/blob/main/Demo/Demo.mp4)
+![Click to Watch Demo](https://github.com/user-attachments/assets/6f991102-2d3b-4ddf-b4e4-75a5724752d2)
 ---
 
 ## ✅ What the App Does
