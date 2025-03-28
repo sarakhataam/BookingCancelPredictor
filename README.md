@@ -20,7 +20,7 @@ It integrates a **machine learning model (Random Forest Classifier)** with a **F
 
 ## 🎥 Demo
 
-[Demo](https://github.com/user-attachments/assets/6f991102-2d3b-4ddf-b4e4-75a5724752d2)
+[Demo](https://github.com/user-attachments/assets/6d31ef38-a829-411c-add6-8426dd3e8512)
 
 ---
 ## ✅ What the App Does
